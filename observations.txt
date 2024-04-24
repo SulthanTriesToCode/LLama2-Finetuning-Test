@@ -5,11 +5,11 @@ Colab T4 GPU (~16 GB):
 Results: Not enough VRAM
 
 RTX A5000 (24 GB):
-Results:
-Steps:
+Results: Success
+Steps: ~10000+ (I forgot to record)
 Training Loss: 1.357
 Total Time for Training: 47:43
-Total Storage Used:
+Total Storage Used: 5 GB
 Iterations per second: 6.04 it/s
 GPU Usage when Training: ~15.1 GB
 Finetuning Method: QLoRA
