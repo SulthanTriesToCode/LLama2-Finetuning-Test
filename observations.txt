@@ -1,21 +1,27 @@
 Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0 
 Dataset: grammarly/coedit
-Finetuning method: DPO
 
 Colab T4 GPU (~16 GB):
 Results: Not enough VRAM
 
-RTX 3090 (24 GB):
-Results: Success
-Steps:200
-Training Loss: 0.003400
+RTX A5000 (24 GB):
+Results:
+Steps:
+Training Loss: 1.357
+Total Time for Training: 47:43
+Total Storage Used:
+Iterations per second: 6.04 it/s
+GPU Usage when Training: ~15.1 GB
+Finetuning Method: QLoRA
+
+2x RTX 3060 (2 x 12 GB):
+Results: Not enough VRAM
 
 Note: This was just a test to see if the code would work or not.
 
 Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
 Quantized: 4-Bit
 Dataset: Open-Orca/OpenOrca
-Finetuning method: DPO
 
 RTX 3090 (24 GB):
 Results: Success
@@ -24,6 +30,6 @@ Training Loss: 0.004
 Total Storage Used: 107.0 GB
 GPU Usage when Mapping: ~2.1 GB 
 GPU Usage when Training: ~22.9 GB
-
+Finetuning method: DPO
 
 
