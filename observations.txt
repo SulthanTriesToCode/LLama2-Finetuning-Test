@@ -6,13 +6,14 @@ Results: Not enough VRAM
 
 RTX A5000 (24 GB):
 Results: Success
+Batches: 4
 Steps: ~10000+ (I forgot to record)
 Training Loss: 1.357
 Total Time for Training: 47:43
 Total Storage Used: 5 GB
 Iterations per second: 6.04 it/s
 GPU Usage when Training: ~15.1 GB
-Finetuning Method: QLoRA
+Finetuning Method: SFT
 
 2x RTX 3060 (2 x 12 GB):
 Results: Not enough VRAM
@@ -25,11 +26,53 @@ Dataset: Open-Orca/OpenOrca
 
 RTX 3090 (24 GB):
 Results: Success
+Batches: 4
 Steps: 200
 Training Loss: 0.004
 Total Storage Used: 107.0 GB
 GPU Usage when Mapping: ~2.1 GB 
 GPU Usage when Training: ~22.9 GB
 Finetuning method: DPO
+
+Model: Llama-3-8B
+Dataset: SulthanTriesToCode/DoNotJsonL
+
+Tesla V100 (16 GB):
+Results: Failed (Not enough VRAM)
+Batches: 1
+
+RTX 3090 (24 GB):
+Results: Success
+Batches: 1
+Iterations per second: 1.63 it/s
+GPU Usage when Training: 22.9 GB
+Steps: 925
+Training loss: 1.060500
+Total Time: 09:17
+Total Storage Taken: 31.0 GB
+
+RTX 3090 (24 GB):
+Results: Failed (Not Enough VRAM)
+Batches: 2
+
+Model: Llama-3-8B-Instruct
+Dataset: SulthanTriesToCode/DoNotJsonL
+
+RTX 3090 (24 GB):
+Results: Success
+Batches: 1
+Iterations per second: 1.68 it/s
+GPU Usage when training: 22.9 GB
+Total Storage Taken: 30 GB
+Steps: 925
+Training loss: 0.783800
+Total time: 09:17
+
+Finetuninng SulthanTriesToCode/Meta-Llama-3-8B-Instruct-DoNot
+
+RTX 3090 (24 GB):
+Results: Success
+Batches: 1
+
 
 
