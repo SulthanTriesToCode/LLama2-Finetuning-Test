@@ -10,4 +10,4 @@ def csv_to_jsonl(csv_file, jsonl_file):
         outfile.write('\n')
 
 # Usage example
-csv_to_jsonl('./do-not-answer/data_en.csv', './data_en.jsonl')
+csv_to_jsonl('CSVFILEHERE', 'CONVERTEDJSONLNAMEHERE')
