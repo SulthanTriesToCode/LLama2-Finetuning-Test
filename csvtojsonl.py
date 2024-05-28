@@ -9,5 +9,6 @@ def csv_to_jsonl(csv_file, jsonl_file):
         json.dump(row, outfile)
         outfile.write('\n')
 
-# Usage example
+# Left side is the CSV file, the right one is the JSONL file, remember to format it accordingly.
+# For example, dataset.csv, then dataset.jsonl
 csv_to_jsonl('CSVFILEHERE', 'CONVERTEDJSONLNAMEHERE')
